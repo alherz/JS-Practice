@@ -20,7 +20,7 @@ function headerNavBarLinkValues(navName) {
     // array Position Counter
     var x = 0;
 
-    if (navName == productLink){
+    if (navName == servicesLink){
 
         for(var i = 0; i < navServiceLinkList.length; i++){
             if(i % 2 == 0 || i == 0){
@@ -31,7 +31,7 @@ function headerNavBarLinkValues(navName) {
             }
             //console.log("create product list loop fired!");
         }
-    } else if (navName == aboutLink){
+    } else if (navName == galleryLink){
         for(var i = 0; i < navGalleryLinkList.length; i++){
             if(i % 2 == 0 || i == 0){
                 linkObj.names[x] = (navGalleryLinkList[i]);

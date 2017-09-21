@@ -1,8 +1,32 @@
-header ul {
-    background-color: indianred;
+header{
+    background-color: #333;
+    color: azure;
+    margin: 0px;
+    padding: 0px;
 }
-header li {
+
+header * {
+    margin: 0px;
+    padding: 10px 10px 10px 10px;
+}
+
+#headerLogoText {
+
+}
+
+ul {
     display: inline-block;
+    padding: 0px;
+}
+li {
+    display: inline-block;
+}
+li:hover{
+    background-color: #5e5e5e;
+}
+
+#headerLogoText{
+
 }
 
 .dropdown-content {
@@ -14,6 +38,8 @@ header li {
     z-index: 1;
     /*height: 200px;*/
     width: 200px;
+    margin-top: 10px;
+    margin-left: -10px;
 }
 
 .dropdown-content a {
