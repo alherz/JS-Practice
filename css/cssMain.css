@@ -1,17 +1,24 @@
+body {
+    background-image: url("../imgs/Free-Tileable-Dark-Wood-Pattern-For-website-background.jpg");
+}
+
+#pageContentWrapper {
+    width: 960px;
+    margin: 0px auto 0px auto;
+    background-color: #d6d1bf;
+    padding: 0px 10px 0px 10px;
+}
+
 header{
-    background-color: #333;
+    background-color: #252525;
     color: azure;
-    margin: 0px;
+    margin: 0 0 10px 0;
     padding: 0px;
 }
 
 header * {
     margin: 0px;
     padding: 10px 10px 10px 10px;
-}
-
-#headerLogoText {
-
 }
 
 ul {
@@ -23,10 +30,6 @@ li {
 }
 li:hover{
     background-color: #5e5e5e;
-}
-
-#headerLogoText{
-
 }
 
 .dropdown-content {
@@ -51,4 +54,72 @@ li:hover{
 
 .dropdown-content a:hover {
     background-color: #f1f1f1;
+}
+
+header form{
+    display: inline-block;
+    padding: 0px;
+    margin: 0;
+    /*float: right;*/
+    /*clear: both;*/
+    color: black;
+}
+
+#headerSearch{
+    display: inline-block;
+    height:25px;
+    margin-right: 5px;
+    padding: 0 0 0 5px;
+    margin: 0 5px 0 0;
+}
+
+#searchButton {
+    /*margin-top: 8px;*/
+    height: 25px;
+    padding: 0px;
+    margin: 0px;
+    font-weight: bold;
+}
+
+.homeArticle {
+    background-color: #fbf5e1;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 10px;
+}
+
+.homeArticleHeader {
+    background-color: #252525;
+    color: white;
+    padding: 2px 15px;
+    border-radius: 15px 15px 0 0;
+
+}
+
+.homeArticleBody {
+    padding: 10px 15px;
+    border-left: solid 2px #252525;
+    border-right: solid 2px #252525;
+}
+
+.homeArticleFooter {
+    background-color: #252525;
+    padding: 2px 15px;
+    color: white;
+}
+
+.author {
+    font-style: italic;
+}
+
+footer{
+    background-color: #252525;
+    color: white;
+    padding: 10px 15px;
+}
+
+footer p {
+    margin: 0px;
+    padding: 0px;
+    font-size: 10px;
+    text-align: center;
 }

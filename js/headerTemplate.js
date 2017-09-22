@@ -3,13 +3,17 @@
  */
 
 // Variable to store the raw HTML for the nav
-var basicHTML = '<span id="headerLogoText">PageLogo</span>' +
+var basicHeaderHTML = '<span id="headerLogoText">PageLogo</span>' +
     '<ul>' +
-    '<li id="servicesNavLink">Services<div id="servicesNavDropDown" class="dropdown-content"></div></li>' +
-    '<li id="galleryNavLink">Gallery<div id="galleryNavDropDown" class="dropdown-content"></div></li>' +
-    '<li id="aboutNavLink">About Us</li>' +
-    '<li id="contactUsNavLink">Contact Us</li>' +
-    '</ul>';
+        '<li id="servicesNavLink">Services<div id="servicesNavDropDown" class="dropdown-content"></div></li>' +
+        '<li id="galleryNavLink">Gallery<div id="galleryNavDropDown" class="dropdown-content"></div></li>' +
+        '<li id="aboutNavLink">About Us</li>' +
+        '<li id="contactUsNavLink">Contact Us</li>' +
+    '</ul>' +
+    '<form>' +
+        '<input id="headerSearch" type="text" name="search" placeholder="Search...">' +
+        '<button type="button" id="searchButton">Search</button>' +
+    '</form>';
 
 // Create the variables to store the nav bar links
 var servicesLink;
@@ -20,7 +24,7 @@ var galleryLinkDropDown;
 // When page loads makes association with variables variables and HTML IDs. Creates mouse hover events for the elements
 $(function() {
     // Add the raw HTML to the page
-    $('header:first > navbar').prepend(basicHTML);
+    $('header:first > navbar').prepend(basicHeaderHTML);
 
     // Adds the event logic to the navigation
     servicesLink = $('#servicesNavLink');
